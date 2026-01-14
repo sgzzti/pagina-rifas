@@ -1,0 +1,23 @@
+meta {
+  name: Login admin
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8888/api/admin
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user": "xdd",
+    "password": "password"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
