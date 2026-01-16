@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="../css/cssPanel.css">
-</head>
-<body> <div class="admin-layout">
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <span class="logo-admin">ADMIN</span>
-            </div>
-            <nav>
-                <ul class="sidebar-menu">
-                    <li class="active"><i class="icon-home"></i> Escritorio</li>
-                    <li><i class="icon-ticket"></i> Punto de venta</li>
-                    <li><i class="icon-user"></i> Reportes</li>
-                    <li><i class="icon-settings"></i> Ajustes</li>
-                    <li><i class="icon-afiliados"></i> Fidelización</li>
-                    <li><i class="icon-users"></i> Usuarios</li>
-                    <li class="logout"><i class="icon-exit"></i> Cerrar sesion</li>
-                </ul>
-            </nav>
-        </aside>
+    <link rel="stylesheet" href="../css/cssPanel.css" />
+  </head>
+  <body>
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span class="logo-admin">ADMIN</span>
+        </div>
+        <nav>
+          <ul id="sidebar" class="sidebar-menu">
+            <li data-seccion="escritorio"><i id="icon-home"></i> Escritorio</li>
+            <li data-seccion="ticket"><i class="icon-ticket"></i> Punto de venta</li>
+            <li data-seccion="reportes"><i class="icon-reportes"></i> Reportes</li>
+            <li data-seccion="ajustes"><i class="icon-settings"></i> Ajustes</li>
+            <li data-seccion="fidelizacion"><i class="icon-afiliados"></i> Fidelización</li>
+            <li data-seccion="usuarios"><i class="icon-users"></i> Usuarios</li>
+            <li data-seccion="logout"><i class="icon-exit"></i> Cerrar sesion</li>
+          </ul>
+        </nav>
+      </aside>
 
-        <main class="main-content">
-            </main>
+      <main class="main-content">
+        <div id="escritorio" class="seccion-contenido">
+          <h1>Panel de Escritorio</h1>
+          <p>Resumen de tus rifas activas.</p>
+        </div>
+
+        <div id="ticket" class="seccion-contenido" style="display: none">
+          <h1>Venta de Boletos</h1>
+          <p>Aquí puedes gestionar las ventas físicas.</p>
+        </div>
+
+
+
+      </main>
     </div>
 
-    <script src="../js/admin.js"></script>
-</body>
+    <script src="../js/panel.js"></script>
+  </body>
 </html>
