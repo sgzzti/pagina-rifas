@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-caja {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.info-caja {
+    flex: 6;
+    background-color: #111827;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.titulo-info {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.form-caja {
+    flex: 5;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.titulo-bienvenida {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    color: #111827;
+    text-align: center; 
+}
+
+.subtitulo {
+    color: #6b7280;
+    margin-bottom: 32px;
+    text-align: center; 
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.inputs {
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputs:focus {
+    border-color: #111827;
+}
+
+.btn-entrar {
+    height: 50px;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #1f2937;
+}
+
+
+.marca{
+    margin-bottom: 80px;
+    font-size: 40px;
+}
+
+.logo-marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px; 
+}
+
+.info-caja img {
+    margin-bottom: 20px; 
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px;
+    margin-bottom: 40px; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.marca-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 12px;
+    margin-bottom: 40px;
+    width: 100%;
+}

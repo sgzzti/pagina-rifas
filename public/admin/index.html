@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <P align="center"><title>Panel Admin</title></P>
-    <input id = "usuario" type="text"/>
-    <input id = "contraseña" type="text"/>
-    <button id = "iniciar">entrar</button>  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="../css/cssLogin.css">
+</head>
+<body>
+  <main class="login-caja">
+    <section class="info-caja">
+        <img src="../imgs/admin.png" alt="admin" width="120">
+        <h1 class="titulo-info">Capital Cars Admin</h1>
+        <p class="texto-info">Gestion de ventas y afiliados</p>
+    </section>
+
+    <section class="form-caja">
+        <div class="login-container">
+            <div class="marca-header">
+                <img src="../imgs/logo.png" alt="logo" width="40">
+                <span class="marca-nombre">Capital Cars</span>
+            </div>
+            
+            <h2 class="titulo-bienvenida">¡Bienvenido de vuelta!</h2>
+            <p class="subtitulo">Ingresa al panel de administrador</p>
+
+            <div class="form-grupo">
+                <input id="usuario" class="inputs" type="text" placeholder="Usuario">
+                <input id="contraseña" class="inputs" type="password" placeholder="Contraseña">
+                <button id="iniciar" class="btn-entrar">Entrar</button>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="../js/admin.js"></script>
 </body>
-<link rel="stylesheet" href="../css/cssPanel.css">
-<script src="../js/admin.js"></script>
 </html>
