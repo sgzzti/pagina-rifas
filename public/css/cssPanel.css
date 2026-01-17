@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +10,27 @@
 body, html {
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 .main-content{
     background: white;
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin: 0px;
+    background-color: #f3f4f6c7;
+    flex: 1;
 }
 
 .admin-layout{
     display:flex;height: 100vh;
-    font-family: monospace;
+    font-family:sans-serif;
     font-size: 20px;
 }
 
 .sidebar{
     width: 250px; 
     color: aliceblue;
-    border-color: #292626;
-    background-color: #1a2223;
+    background-color: #111827;
     padding: 0;
 }
 
@@ -57,7 +62,7 @@ body, html {
 
 
 .activo {
-    background-color: #141a1b; 
+    background-color: #0a0e1680; 
 }
 
 .oculto{
@@ -80,3 +85,80 @@ body, html {
     height: 100%;
     padding: 20px;
 }
+
+.topbar{
+    display: flex;
+    height: 70px;
+    background-color: rgba(150, 148, 148, 0.521);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+
+
+
+
+
+
+
+
+.btn-position {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    border: 2px transparent;
+    background: #10B981;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: sans-serif;
+  }
+  
+  .btn-position span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 70%;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 0;
+  }
+  
+  .btn-position:hover span {
+    width: 300%;
+    height: 300%;
+  }
+  
+  .btn-position b {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .acciones {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-verde {
+    background: #94B4C1;
+  }
+  
+  .btn-rojo {
+    background: #c19494;
+  }
+  
+  .btn-verde span {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .btn-rojo span {
+    background: rgba(0, 0, 0, 0.3);
+    
+  }

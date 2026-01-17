@@ -13,21 +13,36 @@
         </div>
         <nav>
           <ul id="sidebar" class="sidebar-menu">
-            <li data-seccion="escritorio"><i id="icon-home"></i> Escritorio</li>
-            <li data-seccion="ticket"><i class="icon-ticket"></i> Punto de venta</li>
-            <li data-seccion="reportes"><i class="icon-reportes"></i> Reportes</li>
-            <li data-seccion="ajustes"><i class="icon-settings"></i> Ajustes</li>
-            <li data-seccion="fidelizacion"><i class="icon-afiliados"></i> Fidelización</li>
-            <li data-seccion="usuarios"><i class="icon-users"></i> Usuarios</li>
-            <li data-seccion="logout"><i class="icon-exit"></i> Cerrar sesion</li>
+            <li seccion-datos="escritorio"><i class="icon-escritorio"></i> Escritorio</li>
+            <li seccion-datos="ticket"><i class="icon-ticket"></i> Punto de venta</li>
+            <li seccion-datos="reportes"><i class="icon-reportes"></i> Reportes</li>
+            <li seccion-datos="ajustes"><i class="icon-settings"></i> Ajustes</li>
+            <li seccion-datos="fidelizacion"><i class="icon-afiliados"></i> Fidelización</li>
+            <li seccion-datos="usuarios"><i class="icon-usuarios"></i> Usuarios</li>
+            <li seccion-datos="logout"><i class="icon-logout"></i> Cerrar sesion</li>
           </ul>
         </nav>
       </aside>
 
       <main class="main-content">
+        <header class="topbar"> </header>
         <div id="escritorio" class="seccion-contenido">
           <h1>Panel de Escritorio</h1>
-          <p>Resumen de tus rifas activas</p>
+          <p></p>
+          
+          
+          
+          <div class="acciones">
+            <button class="btn-position btn-verde">
+              <span></span>
+              <b id="agregar">Agregar rifa</b>
+            </button>
+          
+            <button class="btn-position btn-rojo">
+              <span></span>
+              <b id="eliminar">Eliminar rifa</b>
+            </button>
+          </div>
         </div>
 
         <div id="ticket" class="seccion-contenido" style="display: none">
